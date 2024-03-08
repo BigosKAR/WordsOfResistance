@@ -428,18 +428,17 @@ nav a:hover {
   height: 50vw;
 }
 
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+.manifesto_header{
+  font-family: apex_regular;
+  color: #428bca;
+  font-size: 3vw;
+  text-align: center;
 }
 
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+.manifesto_text{
+  font-family: apex_regular;
+  font-size: 1vw;
+  color: #767676;
 }
 /* FOOTER PART */
 .FooterPartial {
