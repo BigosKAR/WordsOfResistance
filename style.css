@@ -1,0 +1,480 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-size: auto;
+    background-attachment: fixed;
+}
+
+@font-face {
+  font-family: apex_regular;
+  src: url(./fonts/ApexMk2-Regular.otf);
+}
+
+@font-face {
+  font-family: apex_bold;
+  src: url(./fonts/ApexMk2-BoldExtended.otf);
+}
+
+@font-face {
+  font-family: bloody;
+  src: url(./fonts/BloodstainPersonalUseBold-1GM30.ttf);
+}
+
+@font-face {
+  font-family: apex_light;
+  src: url(./fonts/ApexMk2-LightCondensed.otf);
+}
+
+nav {
+  background-color: black;
+  height: 5vw;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  padding: 0rem calc((100vw - 1300px) / 2);
+  margin: 0;
+  padding: 0;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0 1.5rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.nav-items{
+  font-family: apex_regular;
+  font-size: 1vw;
+  color: #fff;
+  margin-left: 100px;
+  margin-right: 100px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.logo img {
+  width: 1vw; /* Adjust the width of the logo as needed */
+  height: auto;
+}
+
+.inverted img{
+  width: 100px; /* Adjust the width of the logo as needed */
+  height: auto;
+  transform: scaleX(-1);
+}
+
+.lower_nav{
+  height: 6vw;
+  width: 100vw;
+  background-color: #FAFAFA;
+  display: flex;
+  justify-content: center; /* Horizontally center items */
+  align-items: center; /* Vertically center items */
+}
+
+.lower_nav img{
+  width: 180px;
+  height: 100px;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+
+.vl {
+  border-left: 1px solid black;
+  height: 4vw;
+  margin-left: 1vw;
+}
+
+.bloody_nav_text{
+  color: #781515;
+  font-family: bloody;
+  font-size: 80px;
+  padding-top: 10px;
+}
+
+.normal_nav_text{
+  font-family: apex_light;
+  font-size: 1vw;
+  margin-left: 1vw;
+  letter-spacing: .2rem;
+}
+
+.normal_nav_text:hover {
+  text-decoration: underline;
+}
+
+.hidden_text{
+  font-family: apex_light;
+  font-size: 0.9vw;
+  margin-left: 1vw;
+  letter-spacing: .2rem;
+}
+
+.hidden_text:hover span {
+  display: none
+}
+
+.hidden_text:hover:before{
+  text-decoration: underline;
+  content: "AMERICA'S BIGGEST GUN LOBBY";
+}
+
+.lower_nav_small_container p{
+  font-family: apex_light;
+}
+
+
+#slider {
+  position: relative;
+  width: 100vw;
+  height: 40vw;
+
+
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+#slider ul {
+  position: relative;
+  list-style: none;
+  height: 100%;
+  width: 10000%;
+  padding: 0;
+  margin: 0;
+  transition: all 750ms ease;
+  left: 0;
+}
+#slider ul li {
+  position: relative;
+  height: 100%;
+
+  float: left;
+}
+
+#slider ul li img{
+  width: 100vw;
+  height: 40vw;
+  object-fit: cover;
+}
+
+#slider #prev, #slider #next {
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  border-radius: 50%;
+  font-size: 2rem;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  transform: translateY(-50%);
+  transition: all 150ms ease;
+}
+
+#slider #prev {
+  left: 10px;
+}
+#slider #next {
+  right: 10px;
+}
+
+#slider #prev:hover, #slider #next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 0;
+}
+
+/* ARTICLES */
+.articles {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 18vw;
+  width: 80vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  overflow: hidden;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  padding: 0;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  height: 15vw;
+  text-align: center;
+}
+
+.article img{
+  max-width: 100%;
+  height: 10vw;
+  width: 20vw;
+  object-fit: cover;
+  margin-bottom: 0;
+}
+
+.article_lower{
+  width: 20vw;
+  height: 5vw;
+  background-color: #E5E7E9;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-bottom: 1vw;
+  padding-top: 0;
+  text-align: left;
+}
+
+.article_lower h1{
+  font-family: apex_bold;
+  margin: 0vw;
+  padding-top: 0.5vw;
+  padding-left: 0.6vw;
+  font-size: 0.7vw;
+  color: #428bca;
+}
+
+.article_lower h1:hover, .article_lower p:hover{
+  text-decoration: underline;
+}
+
+.article_lower p{
+  font-family: apex_regular;
+  margin: 0vw;
+  padding-top: 0.5vw;
+  padding-left: 0.6vw;
+  padding-right: 0.6vw;
+  font-size: 0.8vw;
+  color: #767676;
+}
+
+.article img, .article_lower{
+  padding: 0px;
+}
+
+.special_image {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 15vw; /* Adjust the height as needed */
+}
+
+.special_image img {
+  max-width: 100%; /* Ensure the image doesn't exceed the container width */
+  max-height: 100%; /* Ensure the image doesn't exceed the container height */
+}
+
+.row{
+  width: 80vw;
+  margin-right: 10vw;
+  margin-left: 10vw;
+  height: 20vw;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5vw;
+}
+
+.row_photo{
+  height: 20vw;
+  width: 40vw;
+  background-size: contain;
+  overflow: hidden;
+}
+
+.row_text{
+  background-color: #E5E7E9;
+  height: 20vw;
+  width: 38vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.row_text h1{
+  margin-top: 0vw;
+  margin-bottom: 1vw;
+  font-family: apex_regular;
+  color:#428bca;
+}
+.row_text p{
+  margin-top: 0vw;
+  margin-bottom: 0vw;
+  font-family: apex_light;
+  color:#767676;
+  word-wrap: break-word;
+  letter-spacing: 0.1vw;
+}
+
+.row_text_photo{
+  height: 5vw;
+  margin-bottom: 0vw;
+}
+
+ /* MANIFESTO PART */
+.article_container {
+  display: flex;
+  align-items: center;
+  height: 30vw;
+  width: 60vw;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  overflow: hidden;
+  background-color: #fff; /* Background color of the div */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow properties */
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  border: 0.3vw solid black;
+}
+
+.image{
+  flex: 1;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.image img {
+  height: 300px;
+  width: 300px;
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text {
+  flex: 1;
+  height: 300px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+.text h1{
+  top: 0vw;
+  font-size: 60px;
+  font-family: apex_bold;
+  text-align: center;  
+}
+
+.text p{
+  font-size: 30px;
+  font-family: apex_regular;
+  text-align: center;
+}
+
+.text button{
+  position: absolute;
+  right: 47%;
+  
+
+  outline: 0;
+  cursor: pointer;
+  padding: 17px 30px;
+  border: 0;
+  color: #fff;
+  font-size: 17.5px;
+  border: 2px solid transparent;
+  border-color: #000;
+  color: #000;
+  background: transparent;
+  font-weight: 800;
+  line-height: 30px;
+  transition: background,color .1s ease-in-out;
+  font-family: apex_bold;
+}
+
+.text button:hover {
+  background-color: #000;
+  color: #fff;  
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  overflow: auto;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  height: 50vw;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* FOOTER PART */
+.FooterPartial {
+  background-color: #292929;
+  color: #a8a8a8;
+  line-height: 130%;
+  padding: 20px 0;
+}
+
+.container {
+  width: 60vw;
+  height: 20vw;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  display: flex;
+  overflow-wrap: break-word;
+  inline-size: 50vw;
+}
+
+.container_footer_text{
+  width: 30vw;
+}
+
+.container p{
+  font-family: apex_regular;
+}
+
+.container img{
+  width: 360px;
+  height: 200px;
+  margin-right: 5vw;
+  object-fit: contain;
+}
+
+#content1::after{
+  content: "\a";
+  white-space: pre;
+}
